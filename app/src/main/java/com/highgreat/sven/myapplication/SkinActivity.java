@@ -145,23 +145,23 @@ public class SkinActivity extends AppCompatActivity {
     /**
      * 日间模式
      */
-//    public void day(View view){
-//        //获取当前的模式，设置相反的模式，
-//        int currentMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
-//        if(currentMode == Configuration.UI_MODE_NIGHT_YES){
-//            Log.i("Sven","设置非夜间模式");
-//            getDelegate().setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//
-//            //ThemeConfig主题配置 这里只是保存了是否夜间模式
-//            NightModeConfig.getInstance().setNightMode(getApplicationContext(),false);
-//        }else{
-//            Log.i("Sven","设置夜间模式");
-//           getDelegate().setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//           NightModeConfig.getInstance().setNightMode(getApplicationContext(),true);
-//        }
-//
-//        recreate();//重新加载Activity
-//    }
+    public void day(View view){
+        //获取当前的模式，设置相反的模式，
+        int currentMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        if(currentMode == Configuration.UI_MODE_NIGHT_YES){
+            Log.i("Sven","设置非夜间模式");
+            getDelegate().setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+            //ThemeConfig主题配置 这里只是保存了是否夜间模式
+            NightModeConfig.getInstance().setNightMode(getApplicationContext(),false);
+        }else{
+            Log.i("Sven","设置夜间模式");
+           getDelegate().setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+           NightModeConfig.getInstance().setNightMode(getApplicationContext(),true);
+        }
+
+        recreate();//重新加载Activity
+    }
 
 
     private static boolean isNight=false;
@@ -176,12 +176,5 @@ public class SkinActivity extends AppCompatActivity {
         //  重启Activity
         recreate();
     }
-
-    public void day(View view) {
-        setNightMode();
-        isNight=!isNight;
-    }
-
-
 
 }

@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(myFragmentPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 //
-//        SkinManager.getInstance().updateSkin(this);
+        SkinManager.getInstance().updateSkin(this);
     }
 
 
