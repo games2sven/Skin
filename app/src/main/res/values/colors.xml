@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="skin_photos_lib_blue">#0455E0 </color>
+
+    <!--toolBar-->
+    <color name="colorPrimary">#ffce3d3a</color>
+    <!--状态栏(style同时设置底部栏颜色)-->
+    <color name="colorPrimaryDark">#ffce3d3a</color>
+
+    <!-- 文字正常主色 -->
+    <color name="colorAccent">#1f1f1f</color>
+
+
+    <color name="tabSelectedTextColor">#ffce3d3a</color>
+
+
+
+</resources>
